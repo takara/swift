@@ -14,9 +14,11 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+                .padding()
         }
-        .padding()
+        .frame(minWidth: 400, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
