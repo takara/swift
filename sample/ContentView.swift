@@ -15,8 +15,12 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
                 .padding()
-            Button("ボタン名") {
-                
+            Button("githubを開く") {
+                let url = URL(string: "https://github.com/takara/swift")!
+                if NSWorkspace.shared.open(url) {
+                    print("default browser was successfully opened")
+
+                }
             }
         }
         .frame(minWidth: 400, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
