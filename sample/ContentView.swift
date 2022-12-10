@@ -15,6 +15,9 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
                 .padding()
+            Button("ボタン名") {
+                
+            }
         }
         .frame(minWidth: 400, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
     }
